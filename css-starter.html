@@ -88,23 +88,28 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      animation: "scale-in" 500ms ease forwards;
+      transition: .1s ease;
+    }
+
+    .hero .button:hover {
+      transform: scale(1.2);
+      background: #173d91;
     }
 
     .button:hover {
-      transform: scale(2);
+      transform: scale(1.2);
       background: #173d91;
     }
 
     /* TODO 5: On smaller screens, use one column and reduce page padding. */
     @media (max-width: 700px) {
       .page {
-        width: 700px;
+        width: 350px;
         padding: 10px;
       }
 
       .card-list {
-        display: inline-block;
+        display: contents;
         grid-template-columns: repeat(3, 1fr);
       }
 
